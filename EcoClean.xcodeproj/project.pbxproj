@@ -26,6 +26,12 @@
 		6B83AD012CFF19BF0061FB37 /* RobotoMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B83AD002CFF19BF0061FB37 /* RobotoMono-Medium.ttf */; };
 		6B83AD072CFF1D0F0061FB37 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD052CFF1D0F0061FB37 /* MenuViewController.swift */; };
 		6B83AD082CFF1D0F0061FB37 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B83AD062CFF1D0F0061FB37 /* MenuViewController.xib */; };
+		6B83AD0D2CFF30D40061FB37 /* TaskFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD0B2CFF30D40061FB37 /* TaskFormViewController.swift */; };
+		6B83AD0E2CFF30D40061FB37 /* TaskFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B83AD0C2CFF30D40061FB37 /* TaskFormViewController.xib */; };
+		6B83AD112CFF3E830061FB37 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD102CFF3E830061FB37 /* TaskModel.swift */; };
+		6B83AD152CFF3F5A0061FB37 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD142CFF3F5A0061FB37 /* CoreDataManager.swift */; };
+		6B83AD172CFF414E0061FB37 /* TaskFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD162CFF414E0061FB37 /* TaskFormViewModel.swift */; };
+		6B83AD1A2CFF441D0061FB37 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD192CFF441D0061FB37 /* MenuViewModel.swift */; };
 		C74C1AB4C3CFD9940AD4039F /* Pods_EcoClean.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635AB2EA60E5E677B8680EDC /* Pods_EcoClean.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +58,12 @@
 		6B83AD002CFF19BF0061FB37 /* RobotoMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Medium.ttf"; sourceTree = "<group>"; };
 		6B83AD052CFF1D0F0061FB37 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		6B83AD062CFF1D0F0061FB37 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		6B83AD0B2CFF30D40061FB37 /* TaskFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFormViewController.swift; sourceTree = "<group>"; };
+		6B83AD0C2CFF30D40061FB37 /* TaskFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskFormViewController.xib; sourceTree = "<group>"; };
+		6B83AD102CFF3E830061FB37 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		6B83AD142CFF3F5A0061FB37 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		6B83AD162CFF414E0061FB37 /* TaskFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFormViewModel.swift; sourceTree = "<group>"; };
+		6B83AD192CFF441D0061FB37 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		9894494465B4D5091509294B /* Pods-EcoClean.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoClean.debug.xcconfig"; path = "Target Support Files/Pods-EcoClean/Pods-EcoClean.debug.xcconfig"; sourceTree = "<group>"; };
 		EDAF572DC73C5805F33A2963 /* Pods-EcoClean.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoClean.release.xcconfig"; path = "Target Support Files/Pods-EcoClean/Pods-EcoClean.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +110,8 @@
 		6B83ACDA2CFF0F900061FB37 /* EcoClean */ = {
 			isa = PBXGroup;
 			children = (
+				6B83AD132CFF3F4F0061FB37 /* CoreData */,
+				6B83AD092CFF30B00061FB37 /* TaskForm */,
 				6B83ACE52CFF10290061FB37 /* Menu */,
 				6B83ACE42CFF0FC30061FB37 /* Root */,
 				6B83ACE62CFF18A20061FB37 /* Extensions */,
@@ -123,6 +137,7 @@
 		6B83ACE52CFF10290061FB37 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				6B83AD182CFF44100061FB37 /* ViewModel */,
 				6B83AD042CFF1D000061FB37 /* View */,
 			);
 			path = Menu;
@@ -160,6 +175,57 @@
 				6B83AD062CFF1D0F0061FB37 /* MenuViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6B83AD092CFF30B00061FB37 /* TaskForm */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD122CFF3F2F0061FB37 /* ViewModel */,
+				6B83AD0F2CFF3E780061FB37 /* Model */,
+				6B83AD0A2CFF30C70061FB37 /* View */,
+			);
+			path = TaskForm;
+			sourceTree = "<group>";
+		};
+		6B83AD0A2CFF30C70061FB37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD0B2CFF30D40061FB37 /* TaskFormViewController.swift */,
+				6B83AD0C2CFF30D40061FB37 /* TaskFormViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B83AD0F2CFF3E780061FB37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD102CFF3E830061FB37 /* TaskModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B83AD122CFF3F2F0061FB37 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD162CFF414E0061FB37 /* TaskFormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B83AD132CFF3F4F0061FB37 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD142CFF3F5A0061FB37 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		6B83AD182CFF44100061FB37 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD192CFF441D0061FB37 /* MenuViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E8BF77CB6F5144A030706F21 /* Frameworks */ = {
@@ -234,6 +300,7 @@
 				6B83ACE02CFF0F900061FB37 /* Assets.xcassets in Resources */,
 				6B83AD082CFF1D0F0061FB37 /* MenuViewController.xib in Resources */,
 				6B83ACE22CFF0F900061FB37 /* LaunchScreen.storyboard in Resources */,
+				6B83AD0E2CFF30D40061FB37 /* TaskFormViewController.xib in Resources */,
 				6B83ACE32CFF0F900061FB37 /* Root.storyboard in Resources */,
 				6B83ACFF2CFF19AF0061FB37 /* RobotoMono-Regular.ttf in Resources */,
 				6B83AD012CFF19BF0061FB37 /* RobotoMono-Medium.ttf in Resources */,
@@ -292,6 +359,7 @@
 				6B83ACF32CFF19350061FB37 /* Font.swift in Sources */,
 				6B83ACF42CFF19350061FB37 /* BaseTextField.swift in Sources */,
 				6B83ACF52CFF19350061FB37 /* ViewController.swift in Sources */,
+				6B83AD1A2CFF441D0061FB37 /* MenuViewModel.swift in Sources */,
 				6B83ACF62CFF19350061FB37 /* UIView.swift in Sources */,
 				6B83ACF72CFF19350061FB37 /* BaseButton.swift in Sources */,
 				6B83ACF82CFF19350061FB37 /* ShadowView.swift in Sources */,
@@ -301,7 +369,11 @@
 				6B83ACDC2CFF0F900061FB37 /* AppDelegate.swift in Sources */,
 				6B83ACDD2CFF0F900061FB37 /* EcoClean.xcdatamodeld in Sources */,
 				6B83ACDE2CFF0F900061FB37 /* SceneDelegate.swift in Sources */,
+				6B83AD172CFF414E0061FB37 /* TaskFormViewModel.swift in Sources */,
+				6B83AD112CFF3E830061FB37 /* TaskModel.swift in Sources */,
 				6B83ACDF2CFF0F900061FB37 /* RootViewController.swift in Sources */,
+				6B83AD152CFF3F5A0061FB37 /* CoreDataManager.swift in Sources */,
+				6B83AD0D2CFF30D40061FB37 /* TaskFormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

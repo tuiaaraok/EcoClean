@@ -13,7 +13,5 @@ class RootViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.viewControllers = [MenuViewController(nibName: "MenuViewController", bundle: nil)]
     }
-
-
 }
 

@@ -140,6 +140,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickedCreateTask:" destination="-1" eventType="touchUpInside" id="mVH-tb-8Vd"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGz-7z-WaY" customClass="BaseButton" customModule="EcoClean" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="96" width="327" height="68"/>
@@ -156,6 +159,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickedTips:" destination="-1" eventType="touchUpInside" id="rdl-a6-6c5"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsB-XE-kTL" customClass="BaseButton" customModule="EcoClean" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="192" width="327" height="68"/>
@@ -172,6 +178,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickedTasks:" destination="-1" eventType="touchUpInside" id="nK9-IT-FwM"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

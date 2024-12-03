@@ -13,7 +13,7 @@ extension UIViewController {
         let titleLabel = UILabel()
         titleLabel.text = title
         titleLabel.textColor = .black
-        titleLabel.font = .regular(size: 30)
+        titleLabel.font = .medium(size: 22)
         titleLabel.textAlignment = .center
         titleLabel.sizeToFit()
         self.navigationItem.titleView = titleLabel
