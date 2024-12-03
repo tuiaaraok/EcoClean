@@ -19,6 +19,7 @@ class TaskFormViewController: UIViewController {
     private let viewModel = TaskFormViewModel.shared
     private var cancellables: Set<AnyCancellable> = []
     private let datePicker = UIDatePicker()
+    var completion: (() -> ())?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +69,7 @@ class TaskFormViewController: UIViewController {
             if let error = error {
                 self.showErrorAlert(message: error.localizedDescription)
             } else {
+                self.completion?()
                 self.navigationController?.popViewController(animated: true)
             }
         }

@@ -114,32 +114,59 @@ class CoreDataManager {
 //        }
 //    }
 //    
-//    func confirmOrder(id: UUID, completion: @escaping (Error?) -> Void) {
-//        let backgroundContext = persistentContainer.newBackgroundContext()
-//        backgroundContext.perform {
-//            let fetchRequest: NSFetchRequest<Order> = Order.fetchRequest()
-//            fetchRequest.predicate = NSPredicate(format: "id == %@", id as CVarArg)
-//            
-//            do {
-//                let results = try backgroundContext.fetch(fetchRequest)
-//                if let order = results.first {
-//                    order.isCompleted = true
-//                    order.completionDate = Date().stripTime()
-//                } else {
-//                    completion(NSError(domain: "CoreDataManager", code: 404, userInfo: [NSLocalizedDescriptionKey: "Order not found"]))
-//                }
-//                try backgroundContext.save()
-//                DispatchQueue.main.async {
-//                    completion(nil)
-//                }
-//            } catch {
-//                DispatchQueue.main.async {
-//                    completion(error)
-//                }
-//            }
-//        }
-//    }
-//    
+    func changeTaskStatus(id: UUID, status: Int, completion: @escaping (Error?) -> Void) {
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<Task> = Task.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "id == %@", id as CVarArg)
+            
+            do {
+                let results = try backgroundContext.fetch(fetchRequest)
+                if let order = results.first {
+                    order.status = Int32(status)
+                } else {
+                    completion(NSError(domain: "CoreDataManager", code: 404, userInfo: [NSLocalizedDescriptionKey: "Task not found"]))
+                }
+                try backgroundContext.save()
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(error)
+                }
+            }
+        }
+    }
+    
+    func removeTask(by id: UUID, completion: @escaping (Error?) -> Void) {
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<Task> = Task.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "id == %@", id as CVarArg)
+            
+            do {
+                let results = try backgroundContext.fetch(fetchRequest)
+                if let taskToRemove = results.first {
+                    backgroundContext.delete(taskToRemove)
+                    try backgroundContext.save()
+                    DispatchQueue.main.async {
+                        completion(nil)
+                    }
+                } else {
+                    DispatchQueue.main.async {
+                        completion(NSError(domain: "", code: 404, userInfo: [NSLocalizedDescriptionKey: "Task not found"]))
+                    }
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(error)
+                }
+            }
+        }
+    }
+
+//
 //    func fetchPortfolio(completion: @escaping ([PortfolioModel], Error?) -> Void) {
 //        let backgroundContext = persistentContainer.newBackgroundContext()
 //        backgroundContext.perform {

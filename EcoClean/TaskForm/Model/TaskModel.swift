@@ -12,6 +12,6 @@ struct TaskModel {
     var name: String?
     var location: String?
     var executor: String?
-    var status: Int = 0
+    var status: Int = 1
     var deadline: Date?
 }
