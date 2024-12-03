@@ -38,6 +38,15 @@
 		6B83AD262CFF6C870061FB37 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B83AD252CFF6C870061FB37 /* TaskTableViewCell.xib */; };
 		6B83AD272CFF6C870061FB37 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD242CFF6C870061FB37 /* TaskTableViewCell.swift */; };
 		6B83AD2A2CFF75A40061FB37 /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD292CFF75A40061FB37 /* TasksViewModel.swift */; };
+		6B83AD2F2CFFA94E0061FB37 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD2D2CFFA94E0061FB37 /* TipsViewController.swift */; };
+		6B83AD302CFFA94E0061FB37 /* TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B83AD2E2CFFA94E0061FB37 /* TipsViewController.xib */; };
+		6B83AD332CFFAB180061FB37 /* TipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD322CFFAB180061FB37 /* TipModel.swift */; };
+		6B83AD372CFFAB600061FB37 /* TipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD352CFFAB600061FB37 /* TipTableViewCell.swift */; };
+		6B83AD382CFFAB600061FB37 /* TipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B83AD362CFFAB600061FB37 /* TipTableViewCell.xib */; };
+		6B83AD3B2CFFAD7A0061FB37 /* TipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD3A2CFFAD7A0061FB37 /* TipsViewModel.swift */; };
+		6B83AD3F2CFFB0210061FB37 /* TipFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD3D2CFFB0210061FB37 /* TipFormViewController.swift */; };
+		6B83AD402CFFB0210061FB37 /* TipFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B83AD3E2CFFB0210061FB37 /* TipFormViewController.xib */; };
+		6B83AD442CFFB14D0061FB37 /* TipFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD432CFFB14D0061FB37 /* TipFormViewModel.swift */; };
 		C74C1AB4C3CFD9940AD4039F /* Pods_EcoClean.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635AB2EA60E5E677B8680EDC /* Pods_EcoClean.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +85,15 @@
 		6B83AD242CFF6C870061FB37 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		6B83AD252CFF6C870061FB37 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		6B83AD292CFF75A40061FB37 /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
+		6B83AD2D2CFFA94E0061FB37 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		6B83AD2E2CFFA94E0061FB37 /* TipsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipsViewController.xib; sourceTree = "<group>"; };
+		6B83AD322CFFAB180061FB37 /* TipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipModel.swift; sourceTree = "<group>"; };
+		6B83AD352CFFAB600061FB37 /* TipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTableViewCell.swift; sourceTree = "<group>"; };
+		6B83AD362CFFAB600061FB37 /* TipTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipTableViewCell.xib; sourceTree = "<group>"; };
+		6B83AD3A2CFFAD7A0061FB37 /* TipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewModel.swift; sourceTree = "<group>"; };
+		6B83AD3D2CFFB0210061FB37 /* TipFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipFormViewController.swift; sourceTree = "<group>"; };
+		6B83AD3E2CFFB0210061FB37 /* TipFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipFormViewController.xib; sourceTree = "<group>"; };
+		6B83AD432CFFB14D0061FB37 /* TipFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipFormViewModel.swift; sourceTree = "<group>"; };
 		9894494465B4D5091509294B /* Pods-EcoClean.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoClean.debug.xcconfig"; path = "Target Support Files/Pods-EcoClean/Pods-EcoClean.debug.xcconfig"; sourceTree = "<group>"; };
 		EDAF572DC73C5805F33A2963 /* Pods-EcoClean.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoClean.release.xcconfig"; path = "Target Support Files/Pods-EcoClean/Pods-EcoClean.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +140,8 @@
 		6B83ACDA2CFF0F900061FB37 /* EcoClean */ = {
 			isa = PBXGroup;
 			children = (
+				6B83AD3C2CFFB0000061FB37 /* TipForm */,
+				6B83AD2B2CFFA92F0061FB37 /* Tips */,
 				6B83AD1B2CFF67BA0061FB37 /* Tasks */,
 				6B83AD092CFF30B00061FB37 /* TaskForm */,
 				6B83ACE52CFF10290061FB37 /* Menu */,
@@ -278,6 +298,77 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		6B83AD2B2CFFA92F0061FB37 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD392CFFAD680061FB37 /* ViewModel */,
+				6B83AD342CFFAB510061FB37 /* Cell */,
+				6B83AD312CFFAB0F0061FB37 /* Model */,
+				6B83AD2C2CFFA9350061FB37 /* View */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
+		6B83AD2C2CFFA9350061FB37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD2D2CFFA94E0061FB37 /* TipsViewController.swift */,
+				6B83AD2E2CFFA94E0061FB37 /* TipsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B83AD312CFFAB0F0061FB37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD322CFFAB180061FB37 /* TipModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B83AD342CFFAB510061FB37 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD352CFFAB600061FB37 /* TipTableViewCell.swift */,
+				6B83AD362CFFAB600061FB37 /* TipTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6B83AD392CFFAD680061FB37 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD3A2CFFAD7A0061FB37 /* TipsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B83AD3C2CFFB0000061FB37 /* TipForm */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD422CFFB13B0061FB37 /* ViewModel */,
+				6B83AD412CFFB0240061FB37 /* View */,
+			);
+			path = TipForm;
+			sourceTree = "<group>";
+		};
+		6B83AD412CFFB0240061FB37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD3D2CFFB0210061FB37 /* TipFormViewController.swift */,
+				6B83AD3E2CFFB0210061FB37 /* TipFormViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B83AD422CFFB13B0061FB37 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD432CFFB14D0061FB37 /* TipFormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E8BF77CB6F5144A030706F21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +446,9 @@
 				6B83AD202CFF67CE0061FB37 /* TasksViewController.xib in Resources */,
 				6B83AD262CFF6C870061FB37 /* TaskTableViewCell.xib in Resources */,
 				6B83ACFF2CFF19AF0061FB37 /* RobotoMono-Regular.ttf in Resources */,
+				6B83AD302CFFA94E0061FB37 /* TipsViewController.xib in Resources */,
+				6B83AD382CFFAB600061FB37 /* TipTableViewCell.xib in Resources */,
+				6B83AD402CFFB0210061FB37 /* TipFormViewController.xib in Resources */,
 				6B83AD012CFF19BF0061FB37 /* RobotoMono-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,14 +512,20 @@
 				6B83AD222CFF69F60061FB37 /* FilterButton.swift in Sources */,
 				6B83ACF92CFF19350061FB37 /* Date.swift in Sources */,
 				6B83AD072CFF1D0F0061FB37 /* MenuViewController.swift in Sources */,
+				6B83AD442CFFB14D0061FB37 /* TipFormViewModel.swift in Sources */,
 				6B83ACFA2CFF19350061FB37 /* String.swift in Sources */,
 				6B83ACDC2CFF0F900061FB37 /* AppDelegate.swift in Sources */,
+				6B83AD3B2CFFAD7A0061FB37 /* TipsViewModel.swift in Sources */,
+				6B83AD372CFFAB600061FB37 /* TipTableViewCell.swift in Sources */,
 				6B83ACDD2CFF0F900061FB37 /* EcoClean.xcdatamodeld in Sources */,
 				6B83ACDE2CFF0F900061FB37 /* SceneDelegate.swift in Sources */,
 				6B83AD272CFF6C870061FB37 /* TaskTableViewCell.swift in Sources */,
+				6B83AD332CFFAB180061FB37 /* TipModel.swift in Sources */,
 				6B83AD172CFF414E0061FB37 /* TaskFormViewModel.swift in Sources */,
 				6B83AD112CFF3E830061FB37 /* TaskModel.swift in Sources */,
+				6B83AD2F2CFFA94E0061FB37 /* TipsViewController.swift in Sources */,
 				6B83AD1F2CFF67CE0061FB37 /* TasksViewController.swift in Sources */,
+				6B83AD3F2CFFB0210061FB37 /* TipFormViewController.swift in Sources */,
 				6B83ACDF2CFF0F900061FB37 /* RootViewController.swift in Sources */,
 				6B83AD152CFF3F5A0061FB37 /* CoreDataManager.swift in Sources */,
 				6B83AD0D2CFF30D40061FB37 /* TaskFormViewController.swift in Sources */,

@@ -80,40 +80,6 @@ class CoreDataManager {
         }
     }
     
-//    func savePortfolio(portfolioModel: PortfolioModel, completion: @escaping (Error?) -> Void) {
-//        let id = portfolioModel.id
-//        let backgroundContext = persistentContainer.newBackgroundContext()
-//        backgroundContext.perform {
-//            let fetchRequest: NSFetchRequest<Portfolio> = Portfolio.fetchRequest()
-//            fetchRequest.predicate = NSPredicate(format: "id == %@", id as CVarArg)
-//            
-//            do {
-//                let results = try backgroundContext.fetch(fetchRequest)
-//                let portfolio: Portfolio
-//                
-//                if let existingPortfolio = results.first {
-//                    portfolio = existingPortfolio
-//                } else {
-//                    portfolio = Portfolio(context: backgroundContext)
-//                    portfolio.id = id
-//                }
-//                
-//                portfolio.fur = portfolioModel.fur
-//                portfolio.info = portfolioModel.info
-//                portfolio.photos = portfolioModel.photos
-//                
-//                try backgroundContext.save()
-//                DispatchQueue.main.async {
-//                    completion(nil)
-//                }
-//            } catch {
-//                DispatchQueue.main.async {
-//                    completion(error)
-//                }
-//            }
-//        }
-//    }
-//    
     func changeTaskStatus(id: UUID, status: Int, completion: @escaping (Error?) -> Void) {
         let backgroundContext = persistentContainer.newBackgroundContext()
         backgroundContext.perform {
@@ -165,63 +131,60 @@ class CoreDataManager {
             }
         }
     }
-
-//
-//    func fetchPortfolio(completion: @escaping ([PortfolioModel], Error?) -> Void) {
-//        let backgroundContext = persistentContainer.newBackgroundContext()
-//        backgroundContext.perform {
-//            let fetchRequest: NSFetchRequest<Portfolio> = Portfolio.fetchRequest()
-//            do {
-//                let results = try backgroundContext.fetch(fetchRequest)
-//                var portfolioModels: [PortfolioModel] = []
-//                for result in results {
-//                    let portfolioModel = PortfolioModel(id: result.id ?? UUID(), fur: result.fur, info: result.info, photos: result.photos ?? [])
-//                    portfolioModels.append(portfolioModel)
-//                }
-//                DispatchQueue.main.async {
-//                    completion(portfolioModels, nil)
-//                }
-//            } catch {
-//                DispatchQueue.main.async {
-//                    completion([], error)
-//                }
-//            }
-//        }
-//    }
-//    
-//    func fetchCompletedOrders(completion: @escaping ([OrderModel], Error?) -> Void) {
-//        let backgroundContext = persistentContainer.newBackgroundContext()
-//        backgroundContext.perform {
-//            let fetchRequest: NSFetchRequest<Order> = Order.fetchRequest()
-//            fetchRequest.predicate = NSPredicate(format: "isCompleted == true")
-//            
-//            do {
-//                let results = try backgroundContext.fetch(fetchRequest)
-//                var ordersModel: [OrderModel] = []
-//                for result in results {
-//                    let orderModel = OrderModel(
-//                        id: result.id ?? UUID(),
-//                        date: result.date ?? Date().stripTime(),
-//                        client: result.client,
-//                        phoneNumber: result.phoneNumber,
-//                        costOfMaterials: result.costOfMaterials,
-//                        productCost: result.productCost,
-//                        priority: Int(result.priority),
-//                        info: result.info,
-//                        completionDate: result.completionDate,
-//                        isCompleted: result.isCompleted
-//                    )
-//                    ordersModel.append(orderModel)
-//                }
-//                DispatchQueue.main.async {
-//                    completion(ordersModel, nil)
-//                }
-//            } catch {
-//                DispatchQueue.main.async {
-//                    completion([], error)
-//                }
-//            }
-//        }
-//    }
+    
+    func saveTip(tipModel: TipModel, completion: @escaping (Error?) -> Void) {
+        let id = tipModel.id
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<Tip> = Tip.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "id == %@", id as CVarArg)
+            
+            do {
+                let results = try backgroundContext.fetch(fetchRequest)
+                let tip: Tip
+                
+                if let existingTip = results.first {
+                    tip = existingTip
+                } else {
+                    tip = Tip(context: backgroundContext)
+                    tip.id = id
+                }
+                
+                tip.info = tipModel.info
+                tip.header = tipModel.header
+                
+                try backgroundContext.save()
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(error)
+                }
+            }
+        }
+    }
+    
+    func fetchTips(completion: @escaping ([TipModel], Error?) -> Void) {
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<Tip> = Tip.fetchRequest()
+            do {
+                let results = try backgroundContext.fetch(fetchRequest)
+                var tipsModel: [TipModel] = []
+                for result in results {
+                    let tipModel = TipModel(id: result.id ?? UUID(), header: result.header, info: result.info)
+                    tipsModel.append(tipModel)
+                }
+                DispatchQueue.main.async {
+                    completion(tipsModel, nil)
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion([], error)
+                }
+            }
+        }
+    }
 }
 

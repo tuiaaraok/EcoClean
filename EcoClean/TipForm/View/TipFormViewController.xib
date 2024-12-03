@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TipFormViewController" customModule="EcoClean" customModuleProvider="target">
+            <connections>
+                <outlet property="createButton" destination="kEK-mp-JOW" id="OAg-aO-ORa"/>
+                <outlet property="descriptionTextField" destination="2AV-zU-crc" id="kgN-UM-04Y"/>
+                <outlet property="headerTextField" destination="20y-JC-H2A" id="GiH-uf-blL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="titleLabels" destination="z9q-bD-Syz" collectionClass="NSMutableArray" id="mZP-qj-fpk"/>
+                <outletCollection property="titleLabels" destination="TpP-nB-9cM" collectionClass="NSMutableArray" id="8sP-8d-kqE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="gS7-tB-2dG">
+                    <rect key="frame" x="39" y="83" width="315" height="164"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIg-m6-wml">
+                            <rect key="frame" x="0.0" y="0.0" width="315" height="73"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9q-bD-Syz">
+                                    <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="21"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20y-JC-H2A" customClass="BaseTextField" customModule="EcoClean" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="21" width="315" height="52"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="52" id="gtA-CJ-kOW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="20y-JC-H2A" firstAttribute="leading" secondItem="jIg-m6-wml" secondAttribute="leading" id="2YJ-td-pog"/>
+                                <constraint firstItem="20y-JC-H2A" firstAttribute="top" secondItem="z9q-bD-Syz" secondAttribute="bottom" id="aMj-Ab-hS8"/>
+                                <constraint firstAttribute="trailing" secondItem="20y-JC-H2A" secondAttribute="trailing" id="bJ8-jY-74X"/>
+                                <constraint firstItem="z9q-bD-Syz" firstAttribute="leading" secondItem="jIg-m6-wml" secondAttribute="leading" id="fhE-dk-SYv"/>
+                                <constraint firstAttribute="bottom" secondItem="20y-JC-H2A" secondAttribute="bottom" id="fhk-CS-ysA"/>
+                                <constraint firstItem="z9q-bD-Syz" firstAttribute="top" secondItem="jIg-m6-wml" secondAttribute="top" id="sg6-LE-KjC"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDf-X7-xwV">
+                            <rect key="frame" x="0.0" y="91" width="315" height="73"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpP-nB-9cM">
+                                    <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="21"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2AV-zU-crc" customClass="BaseTextField" customModule="EcoClean" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="21" width="315" height="52"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="52" id="phh-X8-MCD"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="TpP-nB-9cM" firstAttribute="top" secondItem="LDf-X7-xwV" secondAttribute="top" id="0mE-5N-1wF"/>
+                                <constraint firstAttribute="trailing" secondItem="2AV-zU-crc" secondAttribute="trailing" id="Nbd-yG-Hhd"/>
+                                <constraint firstItem="TpP-nB-9cM" firstAttribute="leading" secondItem="LDf-X7-xwV" secondAttribute="leading" id="kfi-Nn-Mih"/>
+                                <constraint firstItem="2AV-zU-crc" firstAttribute="leading" secondItem="LDf-X7-xwV" secondAttribute="leading" id="khJ-Jx-Zch"/>
+                                <constraint firstItem="2AV-zU-crc" firstAttribute="top" secondItem="TpP-nB-9cM" secondAttribute="bottom" id="ktt-m3-bMq"/>
+                                <constraint firstAttribute="bottom" secondItem="2AV-zU-crc" secondAttribute="bottom" id="xzp-fe-XW6"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEK-mp-JOW" customClass="BaseButton" customModule="EcoClean" customModuleProvider="target">
+                    <rect key="frame" x="39" y="742" width="315" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="clh-uc-gCQ"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Create a tip"/>
+                    <connections>
+                        <action selector="clickedCreate:" destination="-1" eventType="touchUpInside" id="7NT-zg-j19"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="background"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kEK-mp-JOW" secondAttribute="bottom" constant="24" id="avs-By-6b5"/>
+                <constraint firstItem="gS7-tB-2dG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="39" id="fch-Rl-ULP"/>
+                <constraint firstItem="kEK-mp-JOW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="39" id="lwz-6K-nys"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kEK-mp-JOW" secondAttribute="trailing" constant="39" id="nb1-jv-rAB"/>
+                <constraint firstItem="gS7-tB-2dG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="tk6-dz-bVZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gS7-tB-2dG" secondAttribute="trailing" constant="39" id="uII-Xu-S0r"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="toV-A5-1hF" appends="YES" id="qnL-td-6dJ"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="20"/>
+        </view>
+        <tapGestureRecognizer id="toV-A5-1hF">
+            <connections>
+                <action selector="handleTapGesture:" destination="-1" id="vD5-FG-Ro0"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <namedColor name="background">
+            <color red="0.98799997568130493" green="1" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

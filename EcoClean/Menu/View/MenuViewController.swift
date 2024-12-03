@@ -48,6 +48,7 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func clickedTips(_ sender: UIButton) {
+        self.pushViewController(TipsViewController.self)
     }
     
     @IBAction func clickedTasks(_ sender: UIButton) {
