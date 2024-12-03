@@ -1,0 +1,6 @@
+framework module Pods_EcoClean {
+  umbrella header "Pods-EcoClean-umbrella.h"
+
+  export *
+  module * { export * }
+}
