@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="EcoClean" customModuleProvider="target">
             <connections>
                 <outlet property="chartView" destination="TsT-lC-JWx" id="S6j-aU-uQZ"/>
+                <outlet property="completedTasksLabel" destination="XVL-Uq-ri2" id="qQq-Gy-OQz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outletCollection property="titleLabels" destination="7nv-xF-dJ9" collectionClass="NSMutableArray" id="BBb-E3-aDJ"/>
                 <outletCollection property="titleLabels" destination="Ag8-fT-FP8" collectionClass="NSMutableArray" id="qly-Yh-W3n"/>
@@ -27,8 +28,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TsT-lC-JWx" customClass="PieChart" customModule="PieCharts">
                     <rect key="frame" x="33" y="311" width="180" height="180"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tasks completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVL-Uq-ri2">
-                            <rect key="frame" x="27.333333333333336" y="80" width="125.66666666666666" height="20.333333333333329"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tasks completed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVL-Uq-ri2">
+                            <rect key="frame" x="40" y="50.666666666666686" width="100" height="40.666666666666657"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -36,10 +37,11 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="XVL-Uq-ri2" firstAttribute="centerX" secondItem="TsT-lC-JWx" secondAttribute="centerX" id="5Fi-NZ-GDY"/>
-                        <constraint firstItem="XVL-Uq-ri2" firstAttribute="centerY" secondItem="TsT-lC-JWx" secondAttribute="centerY" id="AcY-Lj-P3z"/>
+                        <constraint firstAttribute="trailing" secondItem="XVL-Uq-ri2" secondAttribute="trailing" constant="40" id="98D-za-UXZ"/>
+                        <constraint firstItem="XVL-Uq-ri2" firstAttribute="leading" secondItem="TsT-lC-JWx" secondAttribute="leading" constant="40" id="EzC-Ug-0K6"/>
                         <constraint firstAttribute="width" constant="180" id="ULb-a9-UCz"/>
                         <constraint firstAttribute="height" constant="180" id="YqY-Uy-Ibv"/>
+                        <constraint firstItem="XVL-Uq-ri2" firstAttribute="top" secondItem="TsT-lC-JWx" secondAttribute="top" constant="50.666666666666686" id="xsR-iT-jKR"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="outerRadius">
