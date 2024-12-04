@@ -47,6 +47,8 @@
 		6B83AD3F2CFFB0210061FB37 /* TipFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD3D2CFFB0210061FB37 /* TipFormViewController.swift */; };
 		6B83AD402CFFB0210061FB37 /* TipFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B83AD3E2CFFB0210061FB37 /* TipFormViewController.xib */; };
 		6B83AD442CFFB14D0061FB37 /* TipFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD432CFFB14D0061FB37 /* TipFormViewModel.swift */; };
+		6B83AD482CFFB90A0061FB37 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AD462CFFB90A0061FB37 /* SettingsViewController.swift */; };
+		6B83AD492CFFB90A0061FB37 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B83AD472CFFB90A0061FB37 /* SettingsViewController.xib */; };
 		C74C1AB4C3CFD9940AD4039F /* Pods_EcoClean.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635AB2EA60E5E677B8680EDC /* Pods_EcoClean.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +96,8 @@
 		6B83AD3D2CFFB0210061FB37 /* TipFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipFormViewController.swift; sourceTree = "<group>"; };
 		6B83AD3E2CFFB0210061FB37 /* TipFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipFormViewController.xib; sourceTree = "<group>"; };
 		6B83AD432CFFB14D0061FB37 /* TipFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipFormViewModel.swift; sourceTree = "<group>"; };
+		6B83AD462CFFB90A0061FB37 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6B83AD472CFFB90A0061FB37 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		9894494465B4D5091509294B /* Pods-EcoClean.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoClean.debug.xcconfig"; path = "Target Support Files/Pods-EcoClean/Pods-EcoClean.debug.xcconfig"; sourceTree = "<group>"; };
 		EDAF572DC73C5805F33A2963 /* Pods-EcoClean.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoClean.release.xcconfig"; path = "Target Support Files/Pods-EcoClean/Pods-EcoClean.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +144,7 @@
 		6B83ACDA2CFF0F900061FB37 /* EcoClean */ = {
 			isa = PBXGroup;
 			children = (
+				6B83AD452CFFB8E90061FB37 /* Settings */,
 				6B83AD3C2CFFB0000061FB37 /* TipForm */,
 				6B83AD2B2CFFA92F0061FB37 /* Tips */,
 				6B83AD1B2CFF67BA0061FB37 /* Tasks */,
@@ -369,6 +374,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		6B83AD452CFFB8E90061FB37 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6B83AD462CFFB90A0061FB37 /* SettingsViewController.swift */,
+				6B83AD472CFFB90A0061FB37 /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		E8BF77CB6F5144A030706F21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +452,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B83AD492CFFB90A0061FB37 /* SettingsViewController.xib in Resources */,
 				6B83ACE02CFF0F900061FB37 /* Assets.xcassets in Resources */,
 				6B83AD082CFF1D0F0061FB37 /* MenuViewController.xib in Resources */,
 				6B83ACE22CFF0F900061FB37 /* LaunchScreen.storyboard in Resources */,
@@ -525,6 +540,7 @@
 				6B83AD112CFF3E830061FB37 /* TaskModel.swift in Sources */,
 				6B83AD2F2CFFA94E0061FB37 /* TipsViewController.swift in Sources */,
 				6B83AD1F2CFF67CE0061FB37 /* TasksViewController.swift in Sources */,
+				6B83AD482CFFB90A0061FB37 /* SettingsViewController.swift in Sources */,
 				6B83AD3F2CFFB0210061FB37 /* TipFormViewController.swift in Sources */,
 				6B83ACDF2CFF0F900061FB37 /* RootViewController.swift in Sources */,
 				6B83AD152CFF3F5A0061FB37 /* CoreDataManager.swift in Sources */,

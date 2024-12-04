@@ -43,7 +43,7 @@ class TaskTableViewCell: UITableViewCell {
         dropDown.anchorView = stackView
         dropDown.direction = .bottom
         DropDown.appearance().textColor = .black
-        DropDown.appearance().textFont = .regular(size: 18) ?? .boldSystemFont(ofSize: 18)
+        DropDown.appearance().textFont = .regular(size: 16) ?? .boldSystemFont(ofSize: 18)
         dropDown.addShadow()
         
         dropDown.selectionAction = { [weak self] (index: Int, item: String) in
