@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B2502B02D10791D004B50C1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2502AF2D10791D004B50C1 /* NetworkManager.swift */; };
+		6B2502B32D107949004B50C1 /* PrivacyWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2502B22D107949004B50C1 /* PrivacyWebViewController.swift */; };
+		6B2502B52D107956004B50C1 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2502B42D107956004B50C1 /* PrivacyViewController.swift */; };
+		6B2502B72D107B41004B50C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B2502B62D107B41004B50C1 /* GoogleService-Info.plist */; };
+		6B2502B92D107B73004B50C1 /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 6B2502B82D107B73004B50C1 /* codemagic.yaml */; };
 		6B83ACDC2CFF0F900061FB37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83ACD02CFF0F900061FB37 /* AppDelegate.swift */; };
 		6B83ACDD2CFF0F900061FB37 /* EcoClean.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B83ACD22CFF0F900061FB37 /* EcoClean.xcdatamodeld */; };
 		6B83ACDE2CFF0F900061FB37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83ACD82CFF0F900061FB37 /* SceneDelegate.swift */; };
@@ -54,6 +59,11 @@
 
 /* Begin PBXFileReference section */
 		635AB2EA60E5E677B8680EDC /* Pods_EcoClean.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoClean.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B2502AF2D10791D004B50C1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6B2502B22D107949004B50C1 /* PrivacyWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyWebViewController.swift; sourceTree = "<group>"; };
+		6B2502B42D107956004B50C1 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		6B2502B62D107B41004B50C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6B2502B82D107B73004B50C1 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		6B83ACB52CFF0F890061FB37 /* EcoClean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoClean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B83ACD02CFF0F900061FB37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B83ACD12CFF0F900061FB37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,9 +133,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		6B2502B12D107943004B50C1 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				6B2502B22D107949004B50C1 /* PrivacyWebViewController.swift */,
+				6B2502B42D107956004B50C1 /* PrivacyViewController.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
 		6B83ACAC2CFF0F890061FB37 = {
 			isa = PBXGroup;
 			children = (
+				6B2502B82D107B73004B50C1 /* codemagic.yaml */,
 				6B83ACDA2CFF0F900061FB37 /* EcoClean */,
 				6B83ACB62CFF0F890061FB37 /* Products */,
 				0D35D7AF5A7FD4FEEFE6A104 /* Pods */,
@@ -144,6 +164,7 @@
 		6B83ACDA2CFF0F900061FB37 /* EcoClean */ = {
 			isa = PBXGroup;
 			children = (
+				6B2502B12D107943004B50C1 /* Privacy */,
 				6B83AD452CFFB8E90061FB37 /* Settings */,
 				6B83AD3C2CFFB0000061FB37 /* TipForm */,
 				6B83AD2B2CFFA92F0061FB37 /* Tips */,
@@ -156,6 +177,7 @@
 				6B83ACD02CFF0F900061FB37 /* AppDelegate.swift */,
 				6B83ACD12CFF0F900061FB37 /* Assets.xcassets */,
 				6B83ACD22CFF0F900061FB37 /* EcoClean.xcdatamodeld */,
+				6B2502B62D107B41004B50C1 /* GoogleService-Info.plist */,
 				6B83ACD32CFF0F900061FB37 /* Info.plist */,
 				6B83ACD52CFF0F900061FB37 /* LaunchScreen.storyboard */,
 				6B83ACD82CFF0F900061FB37 /* SceneDelegate.swift */,
@@ -184,6 +206,7 @@
 		6B83ACE62CFF18A20061FB37 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6B2502AF2D10791D004B50C1 /* NetworkManager.swift */,
 				6B83ACEE2CFF19350061FB37 /* Font */,
 				6B83ACE72CFF19350061FB37 /* BaseButton.swift */,
 				6B83ACE82CFF19350061FB37 /* BaseTextField.swift */,
@@ -452,6 +475,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B2502B92D107B73004B50C1 /* codemagic.yaml in Resources */,
 				6B83AD492CFFB90A0061FB37 /* SettingsViewController.xib in Resources */,
 				6B83ACE02CFF0F900061FB37 /* Assets.xcassets in Resources */,
 				6B83AD082CFF1D0F0061FB37 /* MenuViewController.xib in Resources */,
@@ -465,6 +489,7 @@
 				6B83AD382CFFAB600061FB37 /* TipTableViewCell.xib in Resources */,
 				6B83AD402CFFB0210061FB37 /* TipFormViewController.xib in Resources */,
 				6B83AD012CFF19BF0061FB37 /* RobotoMono-Medium.ttf in Resources */,
+				6B2502B72D107B41004B50C1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,12 +554,14 @@
 				6B83AD072CFF1D0F0061FB37 /* MenuViewController.swift in Sources */,
 				6B83AD442CFFB14D0061FB37 /* TipFormViewModel.swift in Sources */,
 				6B83ACFA2CFF19350061FB37 /* String.swift in Sources */,
+				6B2502B02D10791D004B50C1 /* NetworkManager.swift in Sources */,
 				6B83ACDC2CFF0F900061FB37 /* AppDelegate.swift in Sources */,
 				6B83AD3B2CFFAD7A0061FB37 /* TipsViewModel.swift in Sources */,
 				6B83AD372CFFAB600061FB37 /* TipTableViewCell.swift in Sources */,
 				6B83ACDD2CFF0F900061FB37 /* EcoClean.xcdatamodeld in Sources */,
 				6B83ACDE2CFF0F900061FB37 /* SceneDelegate.swift in Sources */,
 				6B83AD272CFF6C870061FB37 /* TaskTableViewCell.swift in Sources */,
+				6B2502B52D107956004B50C1 /* PrivacyViewController.swift in Sources */,
 				6B83AD332CFFAB180061FB37 /* TipModel.swift in Sources */,
 				6B83AD172CFF414E0061FB37 /* TaskFormViewModel.swift in Sources */,
 				6B83AD112CFF3E830061FB37 /* TaskModel.swift in Sources */,
@@ -545,6 +572,7 @@
 				6B83ACDF2CFF0F900061FB37 /* RootViewController.swift in Sources */,
 				6B83AD152CFF3F5A0061FB37 /* CoreDataManager.swift in Sources */,
 				6B83AD0D2CFF30D40061FB37 /* TaskFormViewController.swift in Sources */,
+				6B2502B32D107949004B50C1 /* PrivacyWebViewController.swift in Sources */,
 				6B83AD2A2CFF75A40061FB37 /* TasksViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,12 +615,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Root;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Karen.EcoClean;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NatureShine.WV89Application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -618,12 +647,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Root;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Karen.EcoClean;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NatureShine.WV89Application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
