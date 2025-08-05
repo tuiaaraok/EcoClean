@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "ica.jpg",
+      "filename" : "Frame 12.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -13,7 +13,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "ica 1.jpg",
+      "filename" : "Frame 13.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -25,7 +25,7 @@
           "value" : "tinted"
         }
       ],
-      "filename" : "ica 2.jpg",
+      "filename" : "Frame 14.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
